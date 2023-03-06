@@ -1,0 +1,25 @@
+<p>list components works!</p>
+<ul>
+
+<li>{{presidents[0]}}</li>
+<li>{{presidents[1]}}</li>
+<li>{{presidents[2]}}</li>
+<li>{{presidents[3]}}</li>
+<li>{{presidents[4]}}</li>
+
+
+
+</ul>
+<h3>Presidents</h3>
+<ol>
+    <li *ngFor = "let xyz of presidents">
+        {{xyz}}
+    </li>
+</ol>
+
+<h3>Presidents Terms</h3>
+<ol>
+    <li *ngFor ="let president of mypresidents">
+        {{president.name}},{{president.term}}
+    </li>
+</ol>

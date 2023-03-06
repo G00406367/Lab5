@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { isThisTypeNode } from 'typescript';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'data-app';
+  count : number = 0;
+  hide:boolean = true;
+
+
+onClick(){
+  this.count++;
+
+}
+onDoubleClick(){
+  if(this.hide === true){
+
+  
+  this.hide = false;
+  }else{
+    this.hide = true;
+  }
+}
 }
